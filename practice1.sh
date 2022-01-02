@@ -1,0 +1,17 @@
+#!/bin/bash
+
+string="AAAAAAAAAAAA
+AAAAAAAAAAAA
+AAAAAAAAAAAA
+AAAAAAAAAAAA
+AAAAAAAAAAGA
+AAAAAAAAACAG
+AAAAAAAAATCA
+TTTTTTCATACT
+TTTTTTTTTTTT"
+
+A=practice.txt | grep -c "A"
+echo $A
+percent=$A/12*100
+
+echo $percent
