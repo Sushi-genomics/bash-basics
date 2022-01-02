@@ -1,0 +1,1000 @@
+  216  python3 string.py
+  217  python3 number_operations.py 
+  218  clear
+  219  python3 number_operations.py 
+  220  gedit if.py
+  221  python3 if.py
+  222  gedit po_neg.py
+  223  python3 po_neg.py
+  224  gedit while.py
+  225  python3 while.py
+  226  python2
+  227  gedit for.py
+  228  python for.py
+  229  python3 for.py
+  230  po_neg.py
+  231  while.py
+  232  for.py
+  233  python3 for.py
+  234  python3 string.py
+  235  gedit number123.py
+  236  python3 if.py
+  237  python while.py
+  238  mkdir file_handling
+  239  cd file_handling/
+  240  ls
+  241  gedit file.fa
+  242  gedit seq.fa
+  243  gedit read.py
+  244  python3 read.py
+  245  gedit part_read.py
+  246  python3 part_read.py
+  247  gedit read_line.py
+  248  python3 read_line.py
+  249  gedit while.py
+  250  python3 while.py
+  251  gedit for_read.py
+  252  python3 for_read.py
+  253  gedit write.py
+  254  python3 write.py
+  255  gedit appned.py
+  256  pythpon3 appned.py
+  257  python3 appned.py
+  258  python3 write.py
+  259  python3 appned.py
+  260  gedit write_on_desktop.py
+  261  python write_on_desktop.py
+  262  python3 write_on_desktop.py
+  263  gedit lower.py
+  264  python3 lower.py 
+  265  gedit headers.py
+  266  python3 headers.py
+  267  gedit count_headers.py
+  268  python3 count_headers.py 
+  269  gedit count_headers1.py
+  270  python3 count_headers1.py
+  271  gedit seq_lower.py
+  272  python3 seq_lower.py
+  273  gedit remove_headers.py
+  274  python3 remove_headers.py
+  275  python3 remove_headers_and_lower.py
+  276  gedit remove_headers_and_lower.py
+  277  python3 remove_headers_and_lower.py
+  278  gedit countA.py
+  279  gedit test.fa
+  280  python3 countA.py
+  281  pythpon3 count
+  282  python3 countA.py 
+  283  gedit countATGC.py
+  284  python3 countATGC.py
+  285  python3 countA.py
+  286  python3 countATGC.py
+  287  sh DNSeq_pipeline.sh 
+  288  fastqc SRR2925616_1.fastq SRR2925616_2.fastq
+  289  ls
+  290  fastqc SRR2925616_1.fastq SRR2925616_2.fastq
+  291  cutadapt --help
+  292  cutadapt -q 30,30 -b NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -B NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN -m 20 -o tmp.1.fastq -p tmp.2.fastq SRR2925616_1.fastq SRR2925616_2.fastq
+  293  fastqc tmp.1.fastq tmp.2.fastq
+  294  bwa --help
+  295  bwa -help
+  296  bwa
+  297  bwa index
+  298  bwa index -a bwtsw genome.fa
+  299  bwa
+  300  bwa mem
+  301  bwa mem genome.fa tmp.1.fastq tmp.2.fastq > bwa_SRR2925616.sam
+  302  head bwa_SRR2925616.sam 
+  303  samtools sort bwa_SRR2925616.sam > sorted.bam
+  304  samtools rmdup -sS sorted.bam rmdup_sorted.bam
+  305  samtools mpileup -g -u -f genome.fa rmdup_sorted.bam > variation_mpileup
+  306  bcftools call -c -v variation_mpileup > variation_call.vcf
+  307  sudo apt-get install bcftools
+  308  bcftools call -c -v variation_mpileup > variation_call.vcf
+  309  cat variation_call.vcf | java -jar /home/nandakumar/Downloads/snpEff_latest_core/snpEff/SnpSift.jar filter "(( MQ >= 30 ) & (QUAL >= 30) & (DP >= 10 ))" > filtered.vcf
+  310  % sudo snap install vlc
+  311  sudo snap install vlc
+  312  sudo \apt-get upgrade
+  313  sudo apt-get upgrade
+  314  apt-get update
+  315  apt-get upgrade:
+  316  apt-get upgrade
+  317  sudo apt-get upgrade
+  318  sudo apt update 
+  319  sudo apt upgrade
+  320  apt list --upgradable
+  321  apt upgrade
+  322  sudo apt upgrade
+  323  sudo apt dist-upgrade
+  324  sudo apt upgrade
+  325  apt-get dist-upgrade
+  326  apt dist-upgrade
+  327  sudo apt-get dist-upgrade
+  328  apt-get dist-upgrade
+  329  sudo apt-get dist-upgrade
+  330  sudo apt full-upgrade
+  331  sudo apt upgrade
+  332  wget http://download.ap.bittorrent.com/track/beta/endpoint/utserver/os/linux-x64-ubuntu-13-04 -O utserver.tar.gz
+  333  sudo tar xvf utserver.tar.gz -C /opt/
+  334  sudo apt install libssl1.0.0 libssl-dev
+  335  sudo ln -s /opt/utorrent-server-alpha-v3_3/utserver /usr/bin/utserver
+  336  utserver -settingspath /opt/utorrent-server-alpha-v3_3/ -daemon
+  337  sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+  338  sudo apt install qbittorrent
+  339  sudo apt upgrade
+  340  sudo apt update
+  341  sudo apt upgrade
+  342  rfkill block bluetooth
+  343  rfkill unblock bluetooth
+  344  sudo nano /etc/bluetooth/main.conf 
+  345  systemctl restart bluetooth.service
+  346  sudo service bluetooth restart
+  347  sudo apt-get install unity-control-center
+  348  sudo apt-get clean
+  349  telegram
+  350  pwd
+  351  whoami
+  352  pwd
+  353  uname
+  354  ld
+  355  ls
+  356  ls-l
+  357  ls -l
+  358  cd demo1
+  359  ls
+  360  ls -a
+  361  cd..
+  362  cd
+  363  ls -a
+  364  ls dir
+  365  cd Documents/
+  366  ls dir
+  367  cd
+  368  ls *.pkt
+  369  ls *.fasta
+  370  ls *.fasta ->
+  371  man
+  372  man ls
+  373  ls -d
+  374  ls -A
+  375  ls -D
+  376  man ls
+  377  man dir
+  378  man mkdir
+  379  mkdir batman
+  380  pwd
+  381  ls
+  382  cd batman
+  383  ls
+  384  pwd
+  385  mkdir superman
+  386  ls
+  387  cd superman
+  388  ls
+  389  pwd
+  390  cd ..
+  391  cd superman
+  392  cd batman
+  393  cd nandakumar
+  394  cd batman
+  395  cd superman
+  396  cd ..
+  397  cd superman
+  398  cd ~
+  399  pwd
+  400  cd batman/
+  401  cd superman/
+  402  cd -
+  403  cd ~
+  404  cd  n
+  405  cd namadakumar
+  406  ls
+  407  cd nandakumar
+  408  cd h
+  409  cd home
+  410  ls
+  411  cd batman/
+  412  cd superman/
+  413  ls
+  414  rmdir
+  415  rmdir superman
+  416  cd ..
+  417  rmdir superman
+  418  mkdir superman
+  419  ls
+  420  mv superman SUPERMAN
+  421  ls
+  422  gedit spiderman.txt
+  423  vi spiderman.txt
+  424  gedit spiderman.txt 
+  425  cp spiderman.txt biderman.txt
+  426  ls
+  427  vi biderman.txt
+  428  gedit genes.fasta
+  429  cat biderman
+  430  cat biderman.txt
+  431  cat spiderman.txt biderman.txt > antman.txt
+  432  cat antman.txt
+  433  gedit antman.txt
+  434  cat antman.txt >> biderman.txt
+  435  cat biderman.txt
+  436  cat antman
+  437  cat antman.txt
+  438  gedit antman.txt
+  439  cat antman.txt >> biderman.txt
+  440  cat biderman.txt
+  441  wc biderman.txt
+  442  wc -l
+  443  wc -l biderman.txt
+  444  cd 
+  445  ls
+  446  cd D
+  447  cd Downloads/
+  448  ls
+  449  mv sequence.fasta /batman/SUPERMAN
+  450  mv sequence.fasta /batman
+  451  sudo mv sequence.fasta /batman/
+  452  mv sequence.fasta ./batman
+  453  ls
+  454  cd . .
+  455  cd
+  456  cd batman/
+  457  ls
+  458  ls -a
+  459  cd
+  460  ls
+  461  where sequence.fasta
+  462  man sequence.fata
+  463  pwd sequence.fata
+  464  pwd sequence.fasta
+  465  ls
+  466  ls -a
+  467  cd Downloads/
+  468  ls
+  469  cd
+  470  find sequence.fasta
+  471  find -name sequence.fasta
+  472  sudo find -name sequence.fasta
+  473  pwd
+  474  cd batman
+  475  wc sequence.fasta
+  476  cat sequence.fasta 
+  477  wc -l sequence.fasta 
+  478  wc -w sequence.fasta 
+  479  wc -m sequence.fasta 
+  480  wc -c sequence.fasta 
+  481  wc -L sequence.fasta 
+  482  cat sequence.fasta 
+  483  cd ..
+  484  cd downloads
+  485  cd Downloads
+  486  ls
+  487  mv sequence(2).fasta seqATGC.fasta
+  488  mv 'sequence(2).fasta seqATGC.fasta
+  489  $ mv 'sequence(2).fasta seqATGC.fasta
+  490  mv 'sequence(2).fasta seqATGC.fasta
+  491  mv 'sequence(2).fasta' seqATGC.fasta
+  492  ls
+  493  mv sequence.fasta /Documents
+  494  mv sequence.fasta ./Documents
+  495  mv sequence.fasta home/Documents
+  496  ls
+  497  mv sequence.fasta home/Documents
+  498  cd ..
+  499  pwd
+  500  cd batman
+  501  ls
+  502  cat seqATGC.fasta
+  503  tr 'ATGC' 'TACG' <seqATGC.fasta > demo.fasta 
+  504  cat demo.fasta
+  505  tr "[:upper:]" "[:lower:]" < seqATGC.fasta > demo3.fasta
+  506  cat demo3.fasta
+  507  grep seqATGC.fasta 
+  508  grep">" seqATGC.fasta 
+  509  grep ">" seqATGC.fasta 
+  510  head seqATGC.fasta 
+  511  head -15 seqATGC.fasta 
+  512  1
+  513  0
+  514  r-base
+  515  sudo apt-get install python-dev
+  516  sudo apt-get install python-pip
+  517  print("hello")
+  518  man python
+  519  gedit Python_33.py
+  520  pwd
+  521  cd python_33.py
+  522  cat python_33.y
+  523  cd Downloads
+  524  python
+  525  sudo python -m easy_install -f http://math.uic.edu/t3m/plink plink
+  526  plink.tar.gz <http://math.uic.edu/t3m/plink.tar.gz>
+  527  python
+  528  sudo apt install recordmydesktop
+  529  recordmydesktop --on-the-fly-encoding
+  530  cls
+  531  clear
+  532  recordmydesktop --on-the-fly-encoding
+  533  recordmydesktop --on-the-fly-encoding
+  534  ecordmydesktop --on-the-fly-encoding
+  535  recordmydesktop --on-the-fly-encoding
+  536  plink --file mydata 
+  537  plink
+  538  ./plink
+  539  cd Downloads
+  540  plink
+  541  ./plink
+  542  Plink
+  543  sudo apt install Plink
+  544  $PATH
+  545  /plink --file mydata --assoc 
+  546  Plink
+  547  sudo apt install plink
+  548  plink
+  549  Plink
+  550  plink --file mydata 
+  551  tar -xzvf plink-0.99s-src.tar.gz 
+  552  unzip plink-0.99s-src.zip 
+  553  cd plink-0.99s 
+  554  cd Plink
+  555  cd Pink
+  556  cd Plink.zip
+  557  cd plink
+  558  cd pplink.zip
+  559  cd plink.zip
+  560  plink.zip
+  561  make
+  562  plink
+  563  sudo apt Plink
+  564  sudo make
+  565  plink --ped file1.ped --map file1.map --maf 0.05 --assoc 
+  566  ./plink --file mydata --assoc 
+  567  mkdir ~/bin 
+  568  export PATH=$PATH:~/bin/ 
+  569  /plink --file mydata --assoc 
+  570  ~/bin/
+  571  plink
+  572  ./plink
+  573  plink.zip
+  574  ./plink.zip
+  575  ./   plink --file test
+  576  plink
+  577  ./plink
+  578  cd plink.zip
+  579  cat plink.zip
+  580  62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c
+  581  Downloads
+  582  cd Downloads
+  583  sudo apt get Plink
+  584  sudo apt install Plink
+  585  sudo apt install plink
+  586  9
+  587  cd  ~/bin/
+  588  $PATH 
+  589  mkdir ~/bin 
+  590  export PATH=$PATH:~/bin/ 
+  591  .plink
+  592  sudo apt istall gplink
+  593  sudo apt install plink
+  594  .plink
+  595  cd ..
+  596  cd Downloads
+  597  cd ..
+  598  cd Downloads
+  599  plink
+  600  ./plink
+  601  cd -
+  602  cd-
+  603  cd -
+  604  plink
+  605  ./plink --file mydata --assoc 
+  606  cd plink-0.99s 
+  607  cd Downloads
+  608  --file
+  609  -- file plink
+  610  --file
+  611  plink
+  612  plink --file mydata 
+  613  conda activate plink
+  614  conda create -n plink plink
+  615  conda activate plink
+  616  sudo apt install conda
+  617  ~/.bash_profile
+  618  sudo apt install conda
+  619  sudo apt install anaconda
+  620  sudo apt install Anaconda
+  621  conda init
+  622  cd Downloads
+  623  sudo dpkg –i plink
+  624  sudo apt get install Plink
+  625  sudo apt-get install plink
+  626  ./plink
+  627  plink
+  628  sudo apt-get install Plink
+  629  sudo apt-get install plink
+  630  sudo aptitude search plink
+  631  ./plink
+  632  ./p
+  633  apt-cache search
+  634  sudo aptitude search plink
+  635  apt-cache search
+  636  plink apt-cache search
+  637  apt-cache search plink
+  638  sudo apt-get install aptitude
+  639  sudo apt-get install plink1.9
+  640  sudo apt-get install plink
+  641  sudo apttitude search plink
+  642  sudo aptitude search plink
+  643  apt-cache system plink
+  644  apt-cache search plink
+  645  sudo apt-get install zmap
+  646  apt-cache search plink
+  647  sudo apt-get install olsrd-plugins
+  648  apt-cache search plink
+  649  sudo apt-get install foxeye
+  650  ./plink
+  651  ./plink1.9
+  652  sudo gedit /etc/bash.bashrc
+  653  sudo dpkg-i plink
+  654  sudo dpkg -i plink
+  655  plink
+  656  plink1.8
+  657  plink1.9
+  658  plink --help
+  659  plink1.9 --help
+  660  cd plink
+  661  plink
+  662  cd plinkk
+  663  plink
+  664  cd ..
+  665  ./plink
+  666  cd plinkk
+  667  ./plink
+  668  plink
+  669  ./plink
+  670  $PATH 
+  671  mkdir ~/bin 
+  672  mkdir ~/binn
+  673  ./plink --file mydata --assoc
+  674  --myfile
+  675  cd plink-0.99s 
+  676  cd plink
+  677  cat txt.file
+  678  cat test.map
+  679  sudo apt install plink
+  680  sudo aptitude search plink
+  681  sudo apt install plink1.9
+  682  apt-cache search plink
+  683  sudo apt-get install zmap
+  684  cd plink-1.9
+  685  /home/nandakumar/Downloads/utserver.tar.gz
+  686  utserver.tar.gz
+  687  tar -xzvf plink-0.99s-src.tar.gz 
+  688  plink --file mydata 
+  689  my data.ped
+  690  mydata.ped
+  691  cat mydata.ped
+  692  ./plink --file mydata 
+  693  plink --file test
+  694  ./plink --file test
+  695  link --file test --pheno pheno.raw --assoc --maf 0.05 --out run1 
+  696  plink --file test --pheno pheno.raw --assoc --maf 0.05 --out run1 
+  697  ./plink --test --pheno pheno.raw --assoc --maf 0.05 --out run1 
+  698  ./plink --file test --pheno pheno.raw --assoc --maf 0.05 --out run1 
+  699  ./plink --rerun run1.log --maf 0.1 
+  700  ./plink --file plink.log --pheno pheno.raw --assoc --maf 0.05 --out run1 
+  701  ./plink --file plink --pheno pheno.raw --assoc --maf 0.05 --out run1 
+  702  ./ plink --rerun run.log --maf 0.1 
+  703  ./plink --rerun run1.log --maf 0.1 
+  704  ./plink --file test --assoc 
+  705  unzip plink-0.99s-src.zip 
+  706  plink-0.99s-src
+  707  plink --ped test.ped --map test.map --maf 0.05 --assoc 
+  708  ./plink --ped test.ped --map test.map --maf 0.05 --assoc 
+  709  type test.asscoc
+  710  --ped
+  711  --log
+  712  ./plink --ped
+  713  	{plink} 
+  714  {plink} 
+  715  {plink} --ped
+  716  ./{plink} --ped
+  717  plink --dosage myfile.dat --fam mydata.fam
+  718  ./plink
+  719  ./plink --dosage myfile.raw --chr 22 
+  720  ./plink chr22
+  721  chr22
+  722  --ped test.ped
+  723  ./plink --map test.map
+  724  ./plink
+  725  python
+  726  ./plink --file toy --freq --out toy_analysis
+  727  ./plink --file test --freq --out toy_analysis
+  728  ./plink 1kg_phase1_all.tar.gz
+  729  sudo apt-get update
+  730  cd..
+  731  cd ..
+  732  sudo apt-get update
+  733  cd Do
+  734  cd Downloads/
+  735  ld
+  736  ls
+  737  chmod +x Anaconda3-2021.05-Linux-x86_64.sh 
+  738  ./Anaconda3-2021.05-Linux-x86_64.sh 
+  739  cd plinkk/
+  740  ls
+  741  cd ..
+  742  sudo apt install plink
+  743  mkdir plinkseq1
+  744  cd plinkseq1/
+  745  sudo apt install plink
+  746  sudo chmod +x plink
+  747  ls
+  748  ls -a
+  749  sudo apt install plink
+  750  ls
+  751  conda install -c bioconda plink
+  752  python
+  753  cd ..
+  754  pip install biopython
+  755  python
+  756  conda
+  757  conda install -c bioconda plink
+  758  ls
+  759  ./plink
+  760  cd plinkseq1/
+  761  conda install -c bioconda plink
+  762  ls
+  763  apt-cache search
+  764  apt-cache search conda
+  765  plink
+  766  python plink
+  767  python
+  768  pip install plink
+  769  ls
+  770  plink
+  771  plinkseq
+  772  sudo apt install ncbi
+  773  sudo apt-get install ncbi
+  774  wget ncbi
+  775  cd ..
+  776  wget ncbi
+  777  sudo apt-get install wget
+  778  wget ncbi
+  779  wget https://www.ncbi.nlm.nih.gov/variation/tools/1000genomes/
+  780  wget https://www.ncbi.nlm.nih.gov/
+  781  Downloads
+  782  cd Downloads
+  783  --vcf /home/nandakumar/Downloads/1000G_chr22 1-1000001.vcf
+  784  --vcf 1000G_chr22 1-1000001.vcf
+  785  cd plinkk
+  786  --vcf
+  787  plink
+  788  --vcf 1000G_chr22 1-1000001.vcf
+  789  plink
+  790  --vcf 1000G_chr22 1-1000001.vcf
+  791  plink 1000G_chr22 1-1000001.vcf
+  792  plink 000G_chr22 1-1000001.vcf
+  793  plink 1000G_chr22 1-1000001.vcf --out 1000G_chr22 1-1000001.tped
+  794  000G_chr22 1-1000001.vcf
+  795  plink 000G_chr22 1-1000001.vcf
+  796  plink --file 1000G_chr22 1-1000001.vcf --100 --out 1000G_chr22 1.tfam
+  797  plink --1000G_chr22 1-1000001.vcf --100 --1000G_chr22 1.tfam
+  798  plink --file 1000G_chr22 1-1000001.vcf --100 --out 1000G_chr22 1.tfam
+  799  plink --1000G_chr22 1-1000001.vcf --100 --1000G_chr22 1.tfam
+  800  cd..
+  801  cd ..
+  802  cd plinkk/
+  803  ls
+  804  plink --1000G_chr22 1-1000001.vcf  --1000G_chr22 1.tfam
+  805  plink --file 1000G_chr22 1-1000001.vcf  --out 1000G_chr22 1.tfam
+  806  plink
+  807  plink --file test.map
+  808  cd ..
+  809  plink --file 1000G_chr22 1-1000001.vcf  --out 1000G_chr22 1.tfam
+  810  plink
+  811  cd ..
+  812  ./plink 
+  813  ls
+  814  plink --genome
+  815  clear
+  816  ls
+  817  chmod +x plink
+  818  ./plink 
+  819  cd p
+  820  plink --make-bed
+  821  plink
+  822  ls
+  823  ./plink
+  824  ./plink --file toy.ped
+  825  ./plink --file 1000G_chr22 1-1000001.vcf  --out 1000G_chr22 1.tfam
+  826  ./plink --file 1000G_chr22 1-1000001.vcf  --1000G_chr22 1.tfam
+  827  ./plink --file 1000G_chr22 1-1000001.vcf  --out 1000G_chr221.tfam
+  828  ./plink --1000G_chr22 1-1000001.vcf  --1000G_chr22_1.tfam
+  829  ./plink --file 1000G_chr22 1-1000001.vcf  --out 1000G_chr22_1.tfam
+  830  ./plink --file 1000G_chr22_1-1000001.vcf  --out 1000G_chr22_1.tfam
+  831  ./plink --file "1000G_chr22 1-1000001.vcf"  --out 1000G_chr22_1.tfam
+  832  ./plink --file "1000G_chr22 1-1000001.vcf"  --out "1000G_chr22_1.tfam"
+  833  cd ..
+  834  ./plink --file "1000G_chr22 1-1000001.vcf"  --out "1000G_chr22_1.tfam"
+  835  ./plink --file "1000G_chr22 1-1000001.vcf" 
+  836  ./plink --file "1000G_chr22 1-1000001.vcf"  --out "1000G_chr22_1.tfam"
+  837  ls
+  838  ls -a
+  839  ./plink --file test
+  840  ./plink --file "1000G_chr22 1-1000001"
+  841  ./plink --file test
+  842  ./plink --file "1000G_chr22 1-1000001"
+  843  ./plink --file "1000G_chr22 1-1000001.vcf"
+  844  ./plink --file "1000G_chr22 1-1000001"
+  845  ./plink --vcf "1000G_chr22 1-1000001"  --out "1000G_chr22_1.tfam"
+  846  plinkseq
+  847  pseq
+  848  sudo apt install pseq
+  849  source deactive
+  850  source deactivate
+  851  ./plink 
+  852  ./pseq
+  853  cd plink_linux_x86_64_20210606
+  854  ./plink --file 1000G_chr22 1-1000001
+  855  ./plink --file "1000G_chr22 1-1000001"
+  856  ./plink --file toy
+  857  ./plink --file "1000G_chr22 1-1000001"
+  858  ./plink --file test1
+  859  ./plink --file test1 --recode --out test2
+  860  ./plink --file "1000G_chr22 1-1000001" --recode --out test2
+  861  cd..
+  862  cd ..
+  863  ./plink --file "1000G_chr22 1-1000001" --recode --out test2
+  864  mkdir Genomes
+  865  cd Genomes
+  866  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/vcf_to_ped_converter/version_1.1/vcf_to_ped_convert.pl
+  867  chmod 755 vcf_to_ped_convert.pl
+  868  gunzip -c ex2.vcf.gz 
+  869  wget https://www.cog-genomics.org/static/bin/plink160705/plink_linux_x86_64.zip
+  870  vcf_to_ped_convert.pl -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  871  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/vcf_to_ped_converter/version_1.1/vcf_to_ped_convert.pl
+  872  vcf_to_ped_convert.pl -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  873  vcf_to_ped_convert.pl.1 -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  874  ls
+  875  vcf_to_ped_convert.pl
+  876  ./vcf_to_ped_convert.pl
+  877  ./vcf_to_ped_convert.pl.1 -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  878  ./vcf_to_ped_convert.pl -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  879  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/vcf_to_ped_converter/version_1.1/vcf_to_ped_convert.pl
+  880  ./vcf_to_ped_convert.pl -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  881  sudo ./vcf_to_ped_convert.pl -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  882  ./vcf_to_ped_convert.pl
+  883  sudo ./vcf_to_ped_convert.pl
+  884  perl ./vcf_to_ped_convert.pl
+  885  perl ./vcf_to_ped_convert.pl -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  886  perl vcf_to_ped_convert.pl -vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  887  perl vcf_to_ped_convert.pl --vcf ex2.vcf.gz -sample_panel_file ex2.panel -region 2 -base_format letter -population AUS
+  888  wget tp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr1.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz
+  889  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr1.phase3_shapeit2_mvncall_integrated_v5b.20130502.genotypes.vcf.gz
+  890  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/pilot_data/technical/working/20100303_pilot_indels/SI/CEU/CEU.indels.chr.22.vcf.gz
+  891  wget http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel
+  892  perl vcf_to_ped_converter.pl -vcf "CEU.indels.chr.22.vcf.gz" -sample_panel_file "integrated_call_samples_v3.20130502.ALL.panel"  -population GBR -population FIN
+  893  ls
+  894  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/vcf_to_ped_converter/version_1.1/vcf_to_ped_convert.pl
+  895  perl vcf_to_ped_converter.pl -vcf "CEU.indels.chr.22.vcf.gz" -sample_panel_file "integrated_call_samples_v3.20130502.ALL.panel"  -population GBR -population FIN
+  896  ls
+  897  perl vcf_to_ped_convert.pl -vcf "CEU.indels.chr.22.vcf.gz" -sample_panel_file "integrated_call_samples_v3.20130502.ALL.panel"  -population GBR -population FIN
+  898  perl vcf_to_ped_convert.pl -vcf "CEU.indels.chr.22.vcf.gz" -sample_panel_file integrated_call_samples_v3.20130502.ALL.panel  -population GBR -population FIN
+  899  perl vcf_to_ped_converter.pl -vcf ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/ALL.chr13.phase1_integrated_calls.20101123.snps_indels_svs.genotypes.vcf.gz -sample_panel_file ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/phase1_integrated_calls.20101123.ALL.sample_panel -region 13:32889611-32973805 -population GBR -population FIN
+  900  perl vcf_to_ped_convert.pl -vcf ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/ALL.chr13.phase1_integrated_calls.20101123.snps_indels_svs.genotypes.vcf.gz -sample_panel_file ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/phase1_integrated_calls.20101123.ALL.sample_panel -region 13:32889611-32973805 -population GBR -population FIN
+  901  wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/browser/vcf_to_ped_converter/version_1.1/vcf_to_ped_convert.pl
+  902  perl vcf_to_ped_convert.pl -vcf ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/ALL.chr13.phase1_integrated_calls.20101123.snps_indels_svs.genotypes.vcf.gz -sample_panel_file ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20110521/phase1_integrated_calls.20101123.ALL.sample_panel -region 13:32889611-32973805 -population GBR -population FIN
+  903  chmod 755 vcf_to_ped_convert.pl
+  904  gunzip -c ex2.vcf.gz 
+  905  gunzip -c CEU.indels.chr.22.vcf.gz
+  906  tabix -p CEU.indels.chr.22.vcf.gz
+  907  sudo apt install tabix
+  908  tabix -p vcf ex2.vcf.gz
+  909  tabix -p vcf CEU.indels.chr.22.vcf.gz
+  910  gunzip -c ex2.vcf.gz 
+  911  tabix -p vcf CEU.indels.chr.22.vcf.gz
+  912  cat ex2.panel 
+  913  cat CEU.indels.chr.22.panel 
+  914  cat integrated_call_samples_v3.20130502.ALL.panel
+  915  perl vcf_to_ped_convert.pl -vcf CEU.indels.chr.22.vcf.gz -sample_panel_file integrated_call_samples_v3.20130502.ALL.panel -region 1 -population EUR
+  916  tabix  CEU.indels.chr.22.vcf.gz
+  917  tabix -p -f CEU.indels.chr.22.vcf.gz
+  918  tabix -p -f -vcf CEU.indels.chr.22.vcf.gz
+  919  tabix -p -f vcf CEU.indels.chr.22.vcf.gz
+  920  tabix -p  vcf CEU.indels.chr.22.vcf.gz
+  921  tabix -p  vcf "CEU.indels.chr.22.vcf.gz"
+  922  tabix CEU.indels.chr.22.vcf.gz
+  923  cd samtools-1.13
+  924  ./install.sh
+  925  ./install-sh.sh
+  926  ./install-sh
+  927  ./install.sh
+  928  ./install
+  929  install
+  930  ./configure
+  931  sudo apt purge tabix
+  932  make
+  933  make install
+  934  sudo make install
+  935  tabix
+  936  tabix.c 
+  937  sample
+  938  sudo apt-get install tabix
+  939  gunzip -c ex2.vcf.gz 
+  940  gunzip -c CEU.indels.chr.22.vcf.gz
+  941  cd ..
+  942  gunzip -c CEU.indels.chr.22.vcf.gz
+  943  tabix -p vcf CEU.indels.chr.22.vcf.gz
+  944  tabix -p vcf "CEU.indels.chr.22.vcf.gz"
+  945  tabix -p -f  vcf CEU.indels.chr.22.vcf.gz
+  946  cd Downloads
+  947  mkdir newfolder1
+  948  ./plink
+  949  plink
+  950  sudo apt get plink
+  951  sudo apt install plink
+  952  cd plinkk
+  953  cd Downloads
+  954  cd plink
+  955  cd plinkk
+  956  mkdir new
+  957  mkdir old
+  958  mkdir newold
+  959  ./plinkk --vcf<1000G_chr22 1-1000001.vcf > --keep CEUlist.txt --out outputfile_prefix --plink
+  960  ./plinkk --vcf<1000G_chr22 1-10000011.vcf > --keep CEUlist.txt --out outputfile_prefix --plink
+  961  plink --file test
+  962  plink --file test.map
+  963  sudo apt install plink
+  964  sudo aptitude search plink
+  965  sudo apt-get install plink1.9
+  966  apt-cache search plink
+  967  sudo aptitude search zmap
+  968  sudo aptitude search i
+  969  sudo aptitude search zmap
+  970  sudo aptitude search p
+  971  ./plink
+  972  ./plink --file test
+  973  plink --file test
+  974  plink --test.map
+  975  plink --file
+  976  ./plink --file test --assoc
+  977  ./plink --file
+  978  ./plink --file test2
+  979  plink --file test2
+  980  Plink --file test
+  981  plink --file test2
+  982  ls
+  983  --file test
+  984  plink --test
+  985  plink --file test
+  986  cd ..
+  987  plink --file test
+  988  cd plinkk
+  989  plink --file test
+  990  plink --file hapmap1
+  991  conda config --set auto_activate_base false
+  992  $ conda config --show | grep auto_activate_base
+  993  auto_activate_base: True
+  994  $ conda config --show | grep auto_activate_base
+  995  auto_activate_base: True
+  996  conda config --set auto_activate_base false
+  997  $ sudo apt install git-all
+  998  cd
+  999  $ sudo apt install git-all
+ 1000  apt install git-all
+ 1001  git --version
+ 1002  sudo apt install git
+ 1003  git --version
+ 1004  git-bash
+ 1005  cd Downloads/
+ 1006  cd practice/
+ 1007  ls
+ 1008  grep -w "AT" liver.txt
+ 1009  grep -n "TA"$ liver.txt
+ 1010  g
+ 1011  ls
+ 1012  ls -l
+ 1013  ls Downloads
+ 1014  cd Downloads
+ 1015  ls
+ 1016  ls -l | less
+ 1017  cat liver.txt
+ 1018  liver.fastq
+ 1019  cat liver.fastq
+ 1020  mkdir practice
+ 1021  cp liver.fastq liver1.fastq
+ 1022  cd practice
+ 1023  cp liver.fastq liver1.fastq
+ 1024  cd ..
+ 1025  sort liver.fastq
+ 1026  cat liver.fastq
+ 1027  sort liver.fastq
+ 1028  grep "^TAG" liver.fastq
+ 1029  grep -n "^TAG" liver.fastq
+ 1030  grep -n "TA$" liver.fastq
+ 1031  grep  "TA$" liver.fastq
+ 1032  grep  "TA $" liver.fastq
+ 1033  grep "T $" liver.fastq
+ 1034  grep "TA$" liver.fastq
+ 1035  grep "[TA]$" liver.fastq
+ 1036  grep -n "^TAG" liver.fastq
+ 1037  grep "[TA]$" liver.fastq
+ 1038  grep "T$" liver.fastq
+ 1039  grep "C$" liver.fastq
+ 1040  grep "TAG$" liver.fastq
+ 1041  grep "C$" liver.fastq
+ 1042  grep i "C$" liver.fastq
+ 1043  grep "C$" liver.fastq
+ 1044  grep "^[TA]" liver.fastq
+ 1045  grep "[TA]$" liver.fastq
+ 1046  grep n "[TA]$" liver.fastq
+ 1047  grep -n "[TA]$" liver.fastq
+ 1048  grep -n "TA$" liver.fastq
+ 1049  grep -n "(TA)$" liver.fastq
+ 1050  grep -n "[TA]^" liver.fastq
+ 1051  grep -n "[TA]&" liver.fastq
+ 1052  grep -n "{TA}$" liver.fastq
+ 1053  ls
+ 1054  cd practice/
+ 1055  ls
+ 1056  cat liver.fastq
+ 1057  sort liver.fastq
+ 1058  grep -n ^TAG liver.fastq
+ 1059  grep -n "TA$" liver.fastq
+ 1060  grep -n TA$  liver.fastq
+ 1061  grep -n TA$ liver.fastq
+ 1062  grep -n "T$" liver.fastq
+ 1063  grep -n "T" liver.fastq
+ 1064  grep -n "TA" liver.fastq
+ 1065  grep -n "TA"$ liver.fastq
+ 1066  cp liver.fastq liver.txt
+ 1067  ls
+ 1068  cat liver.txt
+ 1069  grep -n "TA"$ liver.txt
+ 1070  grep -n "TA$" liver.txt
+ 1071  head -n liver.txt | head
+ 1072  head liver.txt | tail
+ 1073  head liver.txt | head
+ 1074  man grep
+ 1075  pwd
+ 1076  sort liver.txt | cp liver.txt liver12.txt
+ 1077  cat liver12.txt
+ 1078  sort liver.txt
+ 1079  sort liver.txt > liver1234.txt
+ 1080  cat liver1234.txt
+ 1081  grep -n "ATGC liver.txt"
+ 1082  grep -n "TA"$ liver.txt
+ 1083  --file test
+ 1084  history
+ 1085  screen -rd job1
+ 1086  sudo apt install screen
+ 1087  screen -rd job1
+ 1088  screen -rd
+ 1089  screen -r
+ 1090  screen -ls
+ 1091  cat liver.txt
+ 1092  grep -n "ATGC" liver.txt
+ 1093  grep "^[ATGC]" liver.txt
+ 1094  grep n "^[ATGC]" liver.txt
+ 1095  grep -n "^[ATGC]" liver.txt
+ 1096  grep -n "AT&" liver.txt
+ 1097  grep -n "AT$" liver.txt
+ 1098  grep -n "TA$" liver.txt
+ 1099  sed 's/A/a/g' liver.txt
+ 1100  grep -n "^[ATGC]" liver.txt > liverr.txt
+ 1101  sed 's/A/a/g' liverr.txt
+ 1102  sed 's/A/a/g' liverr.txt > liverr.txt
+ 1103  sed 's/T/t/g' liverr.txt > liverr.txt
+ 1104  sed 's/G/g/g' liverr.txt > liverr.txt
+ 1105  sed 's/C/c/g' liverr.txt > liverr.txt
+ 1106  cat liverr.txt
+ 1107  cat liver.txt
+ 1108  cat liverr.txt
+ 1109  ls
+ 1110  ls -l liverr.txt
+ 1111  cat liverr.txt
+ 1112  grep -w AT liver.txt
+ 1113  grep -w "AT" liver.txt
+ 1114  $ sudo apt install git-all
+ 1115  cd practice
+ 1116  cd Downloads
+ 1117  cd practice
+ 1118  ls -l
+ 1119  for i in $(seq 1 $length) ; do echo $i ; done
+ 1120  cd Downloads
+ 1121  cd practice
+ 1122  cat liver.txt
+ 1123  grep "ATGC" liver.txt
+ 1124  grep "[ATGC]" liver.txt
+ 1125  grep "[ATGC]" liver.txt > liveratgc.txt
+ 1126  cat liveratgc.txt
+ 1127  for i in $( eval echo {1..$length}); do echo $i; done
+ 1128  lenghth = head -1 liveratgc.txt | wc -c
+ 1129  $lenghth = head -1 liveratgc.txt | wc -c
+ 1130  vim seq.bash
+ 1131  sudo apt install vim
+ 1132  vim liver.bash
+ 1133  for i in {1..2}; do         Acount=`cut -c$i sequence.txt| grep -c "A"`;         Tcount=`cut -c$i sequence.txt| grep -c "T"`;         Gcount=`cut -c$i sequence.txt| grep -c "G"`;         Ccount=`cut -c$i sequence.txt| grep -c "C"`;          echo " At Base $i";         echo "A count = "$Acount;         echo "T count = "$Tcount;         echo "G count = "$Gcount;         echo "C count = "$Ccount;         echo "**********************"; done
+ 1134  for i in {1..2}; do         Acount=`cut -c$i sequence.txt| grep -c "A"`;         Tcount=`cut -c$i sequence.txt| grep -c "T"`;         Gcount=`cut -c$i sequence.txt| grep -c "G"`;         Ccount=`cut -c$i sequence.txt| grep -c "C"`;          echo " At Base $i";         echo "A count = "$Acount;         echo "T count = "$Tcount;         echo "G count = "$Gcount;         echo "C count = "$Ccount;         echo "**********************"; sudo apt install vimclear; clear
+ 1135  cd downloads
+ 1136  cd Downloads
+ 1137  cd practice
+ 1138  vim liver.bash
+ 1139  vim liver.sh
+ 1140  cat practice
+ 1141  cat liver.fastq
+ 1142  cat liveratgc.txt
+ 1143  vim liver.sh
+ 1144  $lenghth = head -1 liveratgc.txt | wc -c
+ 1145  bash liver.sh
+ 1146  vim liver.sh
+ 1147  bash liver.sh
+ 1148  ls practice
+ 1149  ls
+ 1150  cat liveratgc.txt
+ 1151  vim liver.sh
+ 1152  bash liver.sh
+ 1153  vim liver.sh
+ 1154  bash liver.sh
+ 1155  vim liver.sh
+ 1156  bash liver.sh
+ 1157  vim liver.sh
+ 1158  history
+ 1159  bash liver.sh
+ 1160  cd Downloads
+ 1161  cd practice
+ 1162  bash liver.sh
+ 1163  vim liver.sh
+ 1164  bash liver.sh
+ 1165  vim liver.sh
+ 1166  bash liver.sh
+ 1167  vim liver.sh
+ 1168  bash liver.sh
+ 1169  vim liver.sh
+ 1170  vim today.sh
+ 1171  bash today.sh
+ 1172  vim today.sh
+ 1173  vim liver.sh
+ 1174  vim today.sh
+ 1175  bash today.sh
+ 1176  vim today.sh
+ 1177  bash today.sh 
+ 1178  vim today.sh
+ 1179  bash today.sh 
+ 1180  vim today.sh
+ 1181  bash today.sh 
+ 1182  cp today.sh > odd.sh
+ 1183  vim today.sh
+ 1184  vim odd.sh
+ 1185  cp today.sh > odd.sh
+ 1186  vim odd.sh
+ 1187  paste today.sh odd.sh
+ 1188  bash today.sh
+ 1189  bash today.sh even.txt
+ 1190  cat even.txt
+ 1191  bash today.sh > even.txt
+ 1192  cat even.txt
+ 1193  bash odd.sh > odd.txt
+ 1194  vim odd.sh
+ 1195  bash odd.sh
+ 1196  vim odd.sh
+ 1197  bash odd.sh
+ 1198  bash odd.sh > odd.txt
+ 1199  bash today.sh
+ 1200  vim today.sh
+ 1201  vim odd.sh
+ 1202  bash odd.sh
+ 1203  bash odd.sh > odd.txt
+ 1204  cat odd.txt
+ 1205  paste odd.txt even.txt
+ 1206  paste even.txt odd.txt
+ 1207  sed 's/A/T' liveratgc.txt
+ 1208  sed 'S/A/T' liveratgc.txt
+ 1209  sed `S/A/T` liveratgc.txt
+ 1210  sed `s/A/T` liveratgc.txt
+ 1211  man sed
+ 1212  vim today.sh
+ 1213  sed 's/A/T/' liveratgc.txt
+ 1214  sed 's/G/C/' liveratgc.txt
+ 1215  history > bashcommands
